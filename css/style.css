@@ -1,0 +1,319 @@
+@charset "utf-8"
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(62, 62, 77);
+}
+
+.button {
+    padding: 5px 20px;
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+    border: 1px gray solid;
+    transition: 0.4s ease;
+}
+
+.limk:hover {
+    color: gray;
+}
+
+.header {
+  height: 100px;
+}
+
+.header-logo {
+  text-align: center;
+  color: rgb(79, 79, 99);
+}
+
+.header-nav ul {
+ display: flex;
+ justify-content: center;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(112, 108, 108);
+}
+
+#firstview {
+  margin: 0 auto;
+  width: 90%;
+  height: 500px;
+  background: url(../img/186_flash1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#concept {
+    padding: 15px;
+    background-color: rgb(241, 202, 151);
+    height: 380%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.concept-wrap {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.concept-right {
+    width: 40%;
+    height: 200px;
+    background-color: azure;
+    padding: 3%;
+    margin: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: center;   
+}
+
+.concept-right h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.concept-right h3,
+.concept-right p {
+    margin-bottom: 20px;
+}
+.concept-right p {
+    font-size: 15px;
+}
+
+.concept-left img {
+    width: 550px;
+    height: 350px;
+}
+
+
+#stylist {
+    background-color:rgb(216, 211, 211);
+    width: 90%;
+    height: 600px;
+    margin: 0 auto; 
+    margin-top: 5%;
+}
+
+.stylist-title {
+   padding: 4%;
+   font-size: 30px; 
+   text-align: center;
+}
+
+.stylist-cat {
+    width: 30%;
+    background-color: rgb(244, 247, 248);
+    padding: 22px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.stylist-cat img {
+    width: 310px;
+    height: 200px;    
+}
+
+.stylist-cat p {
+    text-align: center;
+}
+
+
+.stylist-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+#stylist .button {
+    margin-left: 50%;
+}
+
+#price {
+    background-color: rgb(193, 226, 226);
+    width: 90%;
+    height: 560px;
+    margin: 0 auto; 
+    margin-top: 5%;;
+}
+
+.price-title {
+   padding: 4%;
+   font-size: 30px; 
+   text-align: center;
+}
+.price-wrap {
+    display: flex;
+    margin: 2%;
+}
+
+.price-left {
+    width: 70%;
+}
+
+.price-left img {
+    padding: 8px;
+    width: 206px;
+    height: 280px;
+}
+.price-right {
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 8px;
+    padding-top: 3%;
+    margin-right: 20px;
+}
+.price-right table {
+    width: 200px;
+    height: 150px;
+    font-size: 15px;
+}
+
+.cut-img {
+    position: relative;
+    top: -270px;
+    left: 200px;
+    width: 260px;
+    height: 100px;
+}
+.cut-img img {   
+    width: 250px;
+    height: 150px;
+}
+
+#place {
+    background-color: rgb(218, 191, 142);
+    width: 100%;
+    height: 600px;
+    margin: 0 auto; 
+    margin-top: 15%;;
+}
+
+.place h3 {
+   padding: 4%;
+   font-size: 30px; 
+   text-align: center;
+}
+
+.place-wrap {
+    display: flex;
+    justify-content: space-around;   
+}
+
+.place-left {
+    width: 250px;
+    height: 100px;
+    padding: 5%;
+    background-color: beige;
+    margin-left: 5%;
+    margin-top: 5%;
+}
