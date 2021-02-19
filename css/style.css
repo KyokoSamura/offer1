@@ -257,6 +257,7 @@ body {
     width: 70%;
 }
 
+
 .price-left img {
     padding: 8px;
     width: 206px;
@@ -316,4 +317,184 @@ body {
     background-color: beige;
     margin-left: 5%;
     margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+#hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4s;
+}   
+
+#hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: gray;
+    transition: 0.8ms;
+}
+
+#hamburger span:nth-of-type(1) {
+    top: 10px;
+}
+
+#hamburger span:nth-of-type(2) {
+    top: 20px;
+}
+
+#hamburger span:nth-of-type(3) {
+    top: 30px;
+}
+
+.header-nav {
+    display: none;
+}
+
+#firstview {
+    width: 90%;
+    height: 400px;
+}
+
+.concept-wrap {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.concept-left img {
+    width: 100%;
+    height: 90%;
+}
+.concept-right,
+.concept-left {
+    width: 100%;
+}
+
+.concept-right {
+    margin: 2%;
+    height: 110%;
+    width: 100%;
+}
+
+.concept-right h3 {
+    margin-top: -2px;
+}
+
+#stylist {
+    height: 850px;
+}
+
+.stylist-title {
+    margin-bottom: 5%;
+}
+.stylist-wrap {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.stylist-cat {
+    width: 90%;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+}
+
+.stylist-cat img {
+    width: 100%;
+    height: 80%;
+}
+
+#stylist .button {
+    margin-left: 40%;
+}
+
+#price {
+    margin-bottom: 15px;
+    height: 540px;
+}
+.price-wrap {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+
+.price-left {
+    display: flex;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+.price-left img {
+    width: 50%;
+    height: 30%;
+}
+.price-right {
+    width: 80%;
+    height: 150px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3px auto;
+    margin-top: -75%;
+    align-items: center;
+    
+}
+
+.price-title {
+    margin-bottom: 5px;
+}
+.price-right table {
+    height: 80%;
+    text-align: center;
+    margin: 3px auto;
+}
+.cut-img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+    
+}
+
+#place {
+    margin-top: 45%;
+    height: 450px;
+}
+
+.place-wrap {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+
+.place h3 {
+    margin-bottom: 5px;
+}
+
+.place-left {
+    padding: 3%;
+    margin: 3px auto;
+}
+
+.place-right {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-top: 5%;
+    width: 90%;
+}
+
+
 }
