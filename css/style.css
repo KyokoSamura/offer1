@@ -142,7 +142,7 @@ body {
   margin: 0 auto;
   width: 90%;
   height: 500px;
-  background: url(../img/186_flash1.jpg) no-repeat;
+  background: url(../img/firstview.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -155,6 +155,7 @@ body {
     width: 90%;
     margin: 0 auto;
     margin-top: 5%;
+    box-sizing: border-box;
 }
 
 .concept-wrap {
@@ -198,9 +199,9 @@ body {
 #stylist {
     background-color:rgb(216, 211, 211);
     width: 90%;
-    height: 600px;
     margin: 0 auto; 
     margin-top: 5%;
+    padding-bottom: 5%;
 }
 
 .stylist-title {
@@ -217,8 +218,7 @@ body {
     margin-bottom: 50px;
 }
 .stylist-cat img {
-    width: 310px;
-    height: 200px;    
+    width: 280px;   
 }
 
 .stylist-cat p {
@@ -228,7 +228,8 @@ body {
 
 .stylist-wrap {
     display: flex;
-    justify-content: space-around;
+    text-align: center;
+    margin-left: 10%;
 }
 
 #stylist .button {
@@ -238,7 +239,6 @@ body {
 #price {
     background-color: rgb(193, 226, 226);
     width: 90%;
-    height: 560px;
     margin: 0 auto; 
     margin-top: 5%;;
 }
@@ -284,19 +284,18 @@ body {
     top: -270px;
     left: 200px;
     width: 260px;
-    height: 100px;
 }
 .cut-img img {   
     width: 250px;
-    height: 150px;
+    
 }
 
 #place {
     background-color: rgb(218, 191, 142);
     width: 100%;
-    height: 600px;
     margin: 0 auto; 
-    margin-top: 15%;;
+    margin-top: 15%;
+    padding-bottom: 5%;
 }
 
 .place h3 {
@@ -317,6 +316,23 @@ body {
     background-color: beige;
     margin-left: 5%;
     margin-top: 5%;
+}
+
+.text {
+    cursor: pointer;
+}
+
+#top-btn {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -386,9 +402,7 @@ body {
     margin-top: -2px;
 }
 
-#stylist {
-    height: 850px;
-}
+
 
 .stylist-title {
     margin-bottom: 5%;
@@ -396,7 +410,7 @@ body {
 .stylist-wrap {
     flex-wrap: wrap;
     text-align: center;
-    margin-bottom: 4%;
+    padding-bottom: 4%;
 }
 
 .stylist-cat {
@@ -407,7 +421,7 @@ body {
 
 .stylist-cat img {
     width: 100%;
-    height: 80%;
+    
 }
 
 #stylist .button {
@@ -416,7 +430,6 @@ body {
 
 #price {
     margin-bottom: 15px;
-    height: 540px;
 }
 .price-wrap {
     flex-wrap: wrap;
@@ -426,24 +439,20 @@ body {
 
 
 .price-left {
-    display: flex;
-    height: 350px;
-    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    
 }
 
-.price-left img {
-    width: 50%;
-    height: 30%;
-}
+
 .price-right {
     width: 80%;
-    height: 150px;
     flex-wrap: wrap;
     text-align: center;
     margin: 3px auto;
-    margin-top: -75%;
     align-items: center;
-    
+
 }
 
 .price-title {
@@ -462,12 +471,10 @@ body {
     text-align: center;
     margin-bottom: 15px;
     width: 100%;
-    
 }
 
 #place {
     margin-top: 45%;
-    height: 450px;
 }
 
 .place-wrap {
@@ -495,6 +502,5 @@ body {
     margin-top: 5%;
     width: 90%;
 }
-
-
 }
+
