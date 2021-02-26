@@ -240,7 +240,8 @@ body {
     background-color: rgb(193, 226, 226);
     width: 90%;
     margin: 0 auto; 
-    margin-top: 5%;;
+    margin-top: 5%;
+    padding-bottom: 5%;
 }
 
 .price-title {
@@ -292,9 +293,9 @@ body {
 
 #place {
     background-color: rgb(218, 191, 142);
-    width: 100%;
+    width: 90%;
     margin: 0 auto; 
-    margin-top: 15%;
+    margin-top: 5%;
     padding-bottom: 5%;
 }
 
@@ -429,7 +430,7 @@ body {
 }
 
 #price {
-    margin-bottom: 15px;
+    padding-bottom: 18%;
 }
 .price-wrap {
     flex-wrap: wrap;
@@ -465,17 +466,14 @@ body {
 }
 .cut-img {
     position: relative;
-    top: 0px;
+    top: 5px;
     left: 0px;
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
-    margin-bottom: 15px;
+    padding-bottom: 5%;
     width: 100%;
 }
 
-#place {
-    margin-top: 45%;
-}
 
 .place-wrap {
     flex-wrap: wrap;
