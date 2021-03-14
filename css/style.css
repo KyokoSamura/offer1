@@ -146,6 +146,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  z-index: 10;
 }
 
 #concept {
@@ -218,7 +219,15 @@ body {
     margin-bottom: 50px;
 }
 .stylist-cat img {
-    width: 280px;   
+    width: 100%;
+    height: auto;   
+}
+
+.stylist-cat-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
 }
 
 .stylist-cat p {
@@ -259,10 +268,12 @@ body {
 }
 
 
-.price-left img {
-    padding: 8px;
-    width: 206px;
+.price-left-img {
+    display: inline-block;
+    width: 30%;
     height: 280px;
+    background-position: center;
+    background-size: cover;
 }
 .price-right {
     width: 500px;
@@ -336,7 +347,64 @@ body {
     right: 20px;
 }
 
+.menu-content {
+    display: none;
+}
 @media screen and (max-width: 768px) {
+
+#firstview {
+    width: 90%;
+    height: 400px;
+}
+.menu-content {
+    z-index: 20;
+    display: block;
+    width: calc(100% - 80px);
+    height: 100%;
+    text-align: center;
+    transition: .2s;
+    position: fixed;
+    top: 0;
+    left: calc(-100% - 80px);
+    background: #fff;
+    color: #333333;
+    box-shadow: 80px 0 rgba(red, green, blue, alpha);
+}
+.menu-content li a {
+    color: #333333;
+    margin: 15px;
+    padding: 5px;
+    border-bottom: 0.5px solid #2662D5; 
+    text-decoration: none;
+    display: block;
+}
+.menu-content li {
+    width: 100%;
+    text-align: left;
+}
+.menu-content.open {
+   left: 0;
+}
+.menu-content .menu-title {
+    margin: 40px 20px;
+    font-size: 2.2rem;
+    color: #333333;
+    text-align: left;
+    font-weight: bold;
+}
+#hamburger.active span:nth-of-type(1){
+    top: 20px;
+    transform: rotate(45deg);
+}
+#hamburger.active span:nth-of-type(2){
+    opacity: 0;
+}
+#hamburger.active span:nth-of-type(3){
+    top: 20px;
+    transform: rotate(-45deg);
+}
+
+
 #hamburger {
     width: 40px;
     height: 40px;
@@ -374,10 +442,7 @@ body {
     display: none;
 }
 
-#firstview {
-    width: 90%;
-    height: 400px;
-}
+
 
 .concept-wrap {
     flex-wrap: wrap;
@@ -422,6 +487,7 @@ body {
 
 .stylist-cat img {
     width: 100%;
+    height: 80%;
     
 }
 
@@ -440,10 +506,16 @@ body {
 
 
 .price-left {
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
     
+}
+
+.price-left img {
+    width: 50%;
+    height: 30%;
 }
 
 
@@ -466,12 +538,13 @@ body {
 }
 .cut-img {
     position: relative;
-    top: 5px;
+    top: 0px;
     left: 0px;
-    margin-top: 10px;
+    margin-top: 40px;
     text-align: center;
-    padding-bottom: 5%;
+    margin-bottom: 15px;
     width: 100%;
+    height: auto;
 }
 
 
